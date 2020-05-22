@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Kursach4sem">
+    <output-path>$PROJECT_DIR$/out/artifacts/Kursach4sem</output-path>
+    <root id="root">
+      <element id="archive" name="Kursach4sem.jar">
+        <element id="module-output" name="Kursach4sem" />
+      </element>
+    </root>
+  </artifact>
+</component>

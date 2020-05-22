@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane stylesheets="/sample/fxml/my.css" prefHeight="400.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.controller.PosledSranvContr">
+    <children>
+        <ImageView id="f7b5e6877bc52371.jpg" fitHeight="436.0" fitWidth="743.0" layoutX="-20.0" layoutY="-11.0">
+            <image>
+                <Image url="@build.jpg" preserveRatio="true" smooth="true" />
+            </image>
+        </ImageView>
+        <BorderPane layoutX="20.0" layoutY="0.0" prefHeight="386.0" prefWidth="680.0">
+            <bottom>
+                <HBox prefHeight="76.0" prefWidth="720.0">
+                    <children>
+                        <Button cancelButton="true" mnemonicParsing="false" onAction="#Back" text="выход">
+                            <font>
+                                <Font name="System Bold" size="18.0" fx:id="x3" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="250.0" top="30.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button font="$x3" mnemonicParsing="false" onAction="#ClearAll" prefWidth="81.0" text="сброс">
+                            <HBox.margin>
+                                <Insets left="70.0" top="30.0" fx:id="x1" />
+                            </HBox.margin>
+                        </Button>
+                        <Button defaultButton="true" font="$x3" mnemonicParsing="false" onAction="#Save" prefWidth="61.0" text="ок" HBox.margin="$x1" />
+                    </children>
+                </HBox>
+            </bottom>
+            <left>
+                <VBox prefHeight="304.0" prefWidth="278.0">
+                    <children>
+                        <ChoiceBox fx:id="choise1" prefWidth="120.0">
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="Item 1" />
+                                    <String fx:value="Item 2" />
+                                    <String fx:value="Item 3" />
+                                </FXCollections>
+                            </items>
+                            <VBox.margin>
+                                <Insets left="10.0" top="35.0" />
+                            </VBox.margin>
+                        </ChoiceBox>
+                        <ChoiceBox fx:id="choise2" prefWidth="120.0">
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="Item 1" />
+                                    <String fx:value="Item 2" />
+                                    <String fx:value="Item 3" />
+                                </FXCollections>
+                            </items>
+                            <VBox.margin>
+                                <Insets left="10.0" top="25.0" fx:id="x2" />
+                            </VBox.margin>
+                        </ChoiceBox>
+                        <ChoiceBox fx:id="choise3" prefWidth="120.0" VBox.margin="$x2">
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="Item 1" />
+                                    <String fx:value="Item 2" />
+                                    <String fx:value="Item 3" />
+                                </FXCollections>
+                            </items>
+                        </ChoiceBox>
+                        <ChoiceBox fx:id="choise4" prefWidth="120.0" VBox.margin="$x2">
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+                                    <String fx:value="Item 1" />
+                                    <String fx:value="Item 2" />
+                                    <String fx:value="Item 3" />
+                                </FXCollections>
+                            </items>
+                        </ChoiceBox>
+                        <Label text="=">
+                            <VBox.margin>
+                                <Insets left="137.0" top="-175.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label text="=">
+                            <VBox.margin>
+                                <Insets left="137.0" top="35.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label text="=">
+                            <VBox.margin>
+                                <Insets left="137.0" top="31.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label text="=">
+                            <VBox.margin>
+                                <Insets left="137.0" top="34.0" />
+                            </VBox.margin>
+                        </Label>
+                        <TextField fx:id="text1" prefWidth="200.0">
+                            <VBox.margin>
+                                <Insets left="160.0" top="-170.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <TextField id="text" fx:id="text2" prefWidth="200.0">
+                            <VBox.margin>
+                                <Insets left="160.0" top="25.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="text3" prefWidth="200.0">
+                            <VBox.margin>
+                                <Insets left="160.0" top="20.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <TextField id="text3" fx:id="text4" prefWidth="200.0">
+                            <VBox.margin>
+                                <Insets left="160.0" top="30.0" />
+                            </VBox.margin>
+                        </TextField>
+                    </children>
+                </VBox>
+            </left>
+            <right>
+                <VBox prefHeight="284.0" prefWidth="432.0">
+                    <children>
+                        <TextField fx:id="textRez1" prefWidth="200.0">
+                            <VBox.margin>
+                                <Insets left="50.0" right="50.0" top="33.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="textRez2" prefWidth="200.0">
+                            <VBox.margin>
+                                <Insets left="50.0" right="50.0" top="30.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="textRez3" prefWidth="200.0">
+                            <VBox.margin>
+                                <Insets left="50.0" right="50.0" top="25.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="textRez4" prefWidth="200.0">
+                            <VBox.margin>
+                                <Insets left="50.0" right="50.0" top="20.0" />
+                            </VBox.margin>
+                        </TextField>
+                    </children>
+                </VBox>
+            </right>
+            <top>
+                <HBox prefHeight="65.0" prefWidth="680.0">
+                    <children>
+                        <Text fill="#fff500" font="$x3" scaleX="1.2142479294472472" scaleY="2.1302006852667645" strokeType="OUTSIDE" strokeWidth="0.0" text="Последовательные сравнения">
+                            <HBox.margin>
+                                <Insets left="200.0" top="15.0" />
+                            </HBox.margin>
+                        </Text>
+                    </children>
+                </HBox>
+            </top>
+        </BorderPane>
+    </children>
+</AnchorPane>

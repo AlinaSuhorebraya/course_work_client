@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="372.0" prefHeight="372.0" prefWidth="647.0" stylesheets="/sample/fxml/my.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Registration">
+    <children>
+        <ImageView id="@Stena.jpg" fitHeight="421.0" fitWidth="660.0" layoutX="-6.0" layoutY="-16.0" opacity="0.62">
+            <effect>
+                <GaussianBlur radius="4.197368421052631" />
+            </effect>
+            <image>
+                <Image preserveRatio="true" smooth="true" url="@a.jpg" />
+            </image>
+        </ImageView>
+        <BorderPane layoutX="23.0" layoutY="97.0" prefHeight="289.0" prefWidth="555.0">
+            <bottom>
+                <HBox prefHeight="71.0" prefWidth="555.0">
+                    <children>
+                        <Button id="btnCansel" defaultButton="true" mnemonicParsing="false" onAction="#actionSave" prefHeight="30.0" prefWidth="116.0" text="сохранить">
+                            <font>
+                                <Font name="System Bold Italic" size="16.0" fx:id="x1" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="250.0" />
+                            </HBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#20065c" />
+                              <Stop color="#262323" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Button>
+                        <Button id="btnSave" cancelButton="true" font="$x1" mnemonicParsing="false" onAction="#actionClose" prefHeight="30.0" prefWidth="99.0" text="отмена">
+                            <HBox.margin>
+                                <Insets left="50.0" />
+                            </HBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#20065c" />
+                              <Stop color="#262323" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Button>
+                    </children>
+                </HBox>
+            </bottom>
+            <center>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <TextField fx:id="textLogin" prefWidth="200.0">
+                            <VBox.margin>
+                                <Insets bottom="20.0" fx:id="x2" />
+                            </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="textPassword" prefWidth="200.0">
+                            <VBox.margin>
+                                <Insets bottom="20.0" top="10.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="textName" prefWidth="200.0" VBox.margin="$x2" />
+                        <TextField fx:id="textSurname" prefWidth="200.0">
+                            <VBox.margin>
+                                <Insets top="5.0" />
+                            </VBox.margin>
+                        </TextField>
+                    </children>
+                </VBox>
+            </center>
+            <left>
+                <VBox prefHeight="341.0" prefWidth="132.0">
+                    <children>
+                        <Label font="$x1" prefWidth="75.0" text="Логин">
+                            <VBox.margin>
+                                <Insets bottom="30.0" />
+                            </VBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#20065c" />
+                              <Stop color="#262323" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                        <Label font="$x1" prefWidth="75.0" text="Пароль">
+                            <VBox.margin>
+                                <Insets bottom="25.0" right="40.0" />
+                            </VBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#20065c" />
+                              <Stop color="#262323" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                        <Label font="$x1" text="Имя">
+                            <VBox.margin>
+                                <Insets bottom="25.0" />
+                            </VBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#20065c" />
+                              <Stop color="#262323" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                        </Label>
+                        <Label font="$x1" text="Фамилия">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#20065c" />
+                              <Stop color="#262323" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill></Label>
+                    </children>
+                </VBox>
+            </left>
+        </BorderPane>
+        <HBox layoutX="23.0" layoutY="14.0" prefHeight="79.0" prefWidth="541.0">
+            <children>
+                <Label text="" textFill="BLACK">
+                    <font>
+                        <Font name="System Bold" size="18.0" fx:id="x3" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="190.0" top="20.0" />
+                    </HBox.margin>
+                </Label>
+                <Text font="$x3" scaleX="1.724593102740018" scaleY="1.5054615664369857" strokeType="OUTSIDE" strokeWidth="0.0" text="Регистрация">
+                    <HBox.margin>
+                        <Insets left="50.0" top="20.0" />
+                    </HBox.margin>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#2f096c" />
+                        <Stop color="#191818" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+                </Text>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

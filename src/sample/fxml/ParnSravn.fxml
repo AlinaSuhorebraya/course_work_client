@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="525.0" minWidth="997.0" prefHeight="525.0" prefWidth="997.0" stylesheets="/sample/fxml/my.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ParnSravnContr">
+    <children>
+        <ImageView id="Без названия.jpg" fitHeight="618.0" fitWidth="1070.9999000000025" layoutX="-25.0" layoutY="-69.0">
+            <image>
+                <Image preserveRatio="true" smooth="true" url="@build.jpg" />
+            </image>
+        </ImageView>
+        <BorderPane layoutX="14.0" layoutY="0.0" prefHeight="525.0" prefWidth="1025.0">
+            <bottom>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button defaultButton="true" mnemonicParsing="false" onAction="#showResult" prefWidth="221.0" text="Показать результат">
+                            <font>
+                                <Font name="System Bold" size="18.0" fx:id="x1" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="250.0" top="25.0" />
+                            </HBox.margin>
+                        </Button>
+                  <Button mnemonicParsing="false" onAction="#res" prefHeight="38.0" prefWidth="153.0" text="Результат-диаграмма">
+                     <HBox.margin>
+                        <Insets left="50.0" top="28.0" />
+                     </HBox.margin>
+                  </Button>
+                        <Button cancelButton="true" font="$x1" mnemonicParsing="false" onAction="#Back" text="Назад">
+                            <HBox.margin>
+                                <Insets left="30.0" top="25.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Label fx:id="labelCount" font="$x1" prefWidth="239.0" text="Количество записей: " textFill="#e5f021">
+                            <HBox.margin>
+                                <Insets left="-780.0" top="30.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+            </bottom>
+            <center>
+                <HBox prefHeight="325.0" prefWidth="869.0" />
+            </center>
+            <top>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label prefHeight="30.0" prefWidth="194.0">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                            <textFill>
+                                <Color blue="0.000" green="0.960" red="1.000" fx:id="x2" />
+                            </textFill>
+                            <HBox.margin>
+                                <Insets left="700.0" top="70.0" />
+                            </HBox.margin>
+                        </Label>
+                        <Text fill="$x2" font="$x1" scaleX="1.0496706779923344" scaleY="1.7936041768640887" strokeType="OUTSIDE" strokeWidth="0.0" text="Меню выбора оптимальной альтернативы методом парных оценок" wrappingWidth="729.7305045127869">
+                            <HBox.margin>
+                                <Insets left="-700.0" top="15.0" />
+                            </HBox.margin>
+                        </Text>
+                    </children>
+                </HBox>
+            </top>
+        </BorderPane>
+        <TableView id="tableAlternative" fx:id="table" layoutX="14.0" layoutY="104.0" prefHeight="333.0" prefWidth="983.0">
+            <columns>
+                <TableColumn id="columnName" fx:id="columnDetailName" maxWidth="5000.0" minWidth="10.0" prefWidth="224.0" text="Наименование " />
+                <TableColumn id="columnDetailCountry" fx:id="columnDetailCountry" maxWidth="5000.0" minWidth="10.0" prefWidth="182.0" text="Страна заказчик" />
+                <TableColumn id="columnDetailCost" fx:id="columnDetailCost" maxWidth="5000.0" minWidth="10.0" prefWidth="100.0" text="Стоимость" />
+                <TableColumn id="columnDetailRang" fx:id="columnTypeOf" maxWidth="5000.0" minWidth="10.0" prefWidth="161.0" text="Тип постройки" />
+                <TableColumn fx:id="columnFirstEx" maxWidth="5000.0" minWidth="10.0" prefWidth="99.0" text="Вес" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
